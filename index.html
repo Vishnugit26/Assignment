@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Assignment</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+            crossorigin="anonymous">
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    </head>
+    <body>
+
+        <div class="d-flex">
+            <div class="custom-navbar-left bg-body-tertiary">
+                <div class="mt-5">
+                    <div
+                        class="d-flex justify-content-center flex-column align-items-center ">
+                        <i class="bi bi-speedometer2"></i>
+                        <p class="custom-p">DashBoard</p>
+                    </div>
+                    <div
+                        class="d-flex justify-content-center flex-column align-items-center">
+                        <i class="bi bi-journals text-success fs-bold"></i>
+                        <p class="custom-p">Project</p>
+                    </div>
+                    <div
+                        class="d-flex justify-content-center flex-column align-items-center">
+                        <i class="bi bi-bell-fill"></i>
+                        <p class="custom-p">Notification</p>
+                    </div>
+                </div>
+            </div>
+            <div class="custom-navbar-right">
+                <div class="bg-light-subtle">
+                    <div
+                        class="d-flex justify-content-between navbar-right-custom  ">
+                        <h6>
+                            <div class="dropdown">
+                                <div class="d-flex align-items-center gap-2 "
+                                    style="height: 100%;">
+                                    <button
+                                        class="btn btn-transpartent border border-1 w-5 dropdown-toggle d-flex justify-content-center align-items-center "
+                                        type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <i class="bi bi-house-door"></i>
+                                    </button> <p class="pt-1">/ Super Admin</p>
+                                </div>
+                                <ul
+                                    class="dropdown-menu dropdown-menu-bg-light-subtle">
+                                    <li><a class="dropdown-item active"
+                                            href="#">Action</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="#">Another action</a></li>
+                                    <li><a class="dropdown-item"
+                                            href="#">Something else
+                                            here</a></li>
+                                    <li><hr class="dropdown-divider"></li>
+                                    <li><a class="dropdown-item"
+                                            href="#">Separated link</a></li>
+                                </ul>
+                            </div>
+                        </h6>
+                        <h6><i class="bi bi-person-circle"></i> Adharsh
+                            Sandhosh</h6>
+                    </div>
+                </div>
+                <div class="ps-4 pt-3">
+                    <ul class="nav nav-pills custom-li" id="myTab"
+                        role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link custom-tab active"
+                                id="project-tab" data-bs-toggle="tab"
+                                href="#project" role="tab"
+                                aria-controls="project"
+                                aria-selected="true">Project</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link  custom-tab"
+                                id="project-info-tab" data-bs-toggle="tab"
+                                href="#project-info" role="tab"
+                                aria-controls="project-info"
+                                aria-selected="false">Project Info</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link custom-tab"
+                                id="manage-access-tab" data-bs-toggle="tab"
+                                href="#manage-access" role="tab"
+                                aria-controls="manage-access"
+                                aria-selected="false">Manage Access</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="project"
+                        role="tabpanel" aria-labelledby="project-tab">
+                        <!-- Project content here -->
+
+                        <div class="d-flex justify-content-end"
+                            style="width: calc(100% - 20px);">
+                            <div class="d-flex w-45 gap-1 ">
+                                <input class="form-control me-2" type="search"
+                                    placeholder="Search" aria-label="Search"
+                                    style="height: 39px !important;">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination custom-pagination">
+                                        <li class="page-item"><a
+                                                class="page-link  text-dark"
+                                                href="#">Previous</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link text-dark"
+                                                href="#">1</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link text-dark"
+                                                href="#">2</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link text-dark"
+                                                href="#">3</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link text-dark"
+                                                href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="form-control"
+                                    style="width: fit-content; height: fit-content ; cursor: pointer;">
+                                    <i class="bi bi-printer-fill"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <table class="table table-bordered "
+                            style="width: calc(100% - 40px); margin: 0 auto;">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>Work order No</th>
+                                    <th>Projct Name</th>
+                                    <th>Start date</th>
+                                    <th>End date</th>
+                                    <th>Customer name</th>
+                                    <th>Status</th>
+                                    <th>Remarks</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>PROJ001</td>
+                                    <td>APIT 1</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Adarsh</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td>PROJ002</td>
+                                    <td>APIT 2</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Adarsh</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="tab-pane fade" id="project-info" role="tabpanel"
+                        aria-labelledby="project-info-tab">
+                        <!-- Project Info content here -->
+                        <div
+                            class=" d-flex align-items-center  justify-content-end">
+
+                            <div
+                                class="custom-select w-25  d-flex align-items-center gap-4 justify-content-end p-3 pb-2">
+                                <h6 class="fw-light"
+                                    style="font-size: 10px !important; width: 100px;">
+                                    WO Number</h6>
+                                <select name id class="form-control">
+                                    <option value>1</option>
+                                    <option value>2</option>
+                                    <option value>3</option>
+                                </select>
+                                <i class="bi bi-chevron-down"
+                                    style="position: absolute; right: 63px;"></i>
+                            </div>
+                        </div>
+                        <div class="custom-nav-round">
+                            <div>
+                                <nav class="navbar custom-nav-round-nav ">
+                                    <div class="container-fluid">
+                                        <span class
+                                            style="font-size: 13px;  font-weight: bold;">Summary
+                                            BOM</span>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div>
+                                <h6>Category</h6>
+                                <div
+                                    class="d-flex align-items-center category-group">
+                                    <div
+                                        class="w-35 d-flex align-items-center gap-4 justify-content-end p-3 pb-2 custom-select">
+                                        <select name="category"
+                                            class="form-control">
+                                            <option
+                                                value="Aspiration ducting">Aspiration
+                                                ducting</option>
+                                            <option value="2">2</option>
+                                            <option value="3">3</option>
+                                        </select>
+                                        <i class="bi bi-chevron-down"></i>
+                                    </div>
+                                    <div>
+                                        <i
+                                            class="bi bi-plus-circle-fill text-success add-category"></i>
+                                        <i
+                                            class="bi bi-dash-circle-fill text-success remove-category"></i>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div>
+                                <nav class="navbar custom-nav-round-nav ">
+                                    <div class="container-fluid">
+                                        <span class
+                                            style="font-size: 13px; font-weight: bold;">Design
+                                        </span>
+                                    </div>
+                                </nav>
+                                <div class="d-flex align-items-center gap-5">
+                                    <div>
+                                        <div>
+                                            <div
+                                                class=" d-flex align-items-center gap-2">
+                                                <div class>
+                                                    <h1
+                                                        style="font-size: 12px;">Employees</h1>
+                                                    <div>
+                                                        <input type="text"
+                                                            class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h1
+                                                        style="font-size: 12px;">Roles</h1>
+                                                    <div
+                                                        class="w-35  d-flex align-items-center gap-4 justify-content-end  custom-select">
+
+                                                        <select name id
+                                                            class="form-control">
+                                                            <option
+                                                                value>Aspiration
+                                                                ducting</option>
+                                                            <option
+                                                                value>2</option>
+                                                            <option
+                                                                value>3</option>
+                                                        </select>
+                                                        <i
+                                                            class="bi bi-chevron-down"
+                                                            style="position: absolute; right: 33px;"></i>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <i
+                                                        class="bi bi-plus-circle-fill text-success"></i>
+                                                    <i
+                                                        class="bi bi-dash-circle-fill text-success"></i>
+                                                </div>
+                                            </div>
+                                            <div
+                                                class=" d-flex align-items-center gap-2 pt-3">
+                                                <div class>
+
+                                                    <div>
+                                                        <input type="text"
+                                                            class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <div
+                                                        class="w-35  d-flex align-items-center gap-4 justify-content-end  custom-select">
+
+                                                        <select name id
+                                                            class="form-control">
+                                                            <option
+                                                                value></option>
+                                                            <option
+                                                                value>2</option>
+                                                            <option
+                                                                value>3</option>
+                                                        </select>
+                                                        <i
+                                                            class="bi bi-chevron-down"
+                                                            style="position: absolute; right: 33px;"></i>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <i
+                                                        class="bi bi-plus-circle-fill text-success"></i>
+                                                    <i
+                                                        class="bi bi-dash-circle-fill text-success"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center gap-5">
+                                        <div>
+                                            <h1
+                                                style="font-size: 12px;">Start
+                                                Date</h1>
+                                            <input type="date"
+                                                class="form-control">
+                                        </div>
+                                        <div>
+                                            <h1
+                                                style="font-size: 12px;">End
+                                                Date</h1>
+                                            <input type="date"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <nav class="navbar custom-nav-round-nav ">
+                                    <div class="container-fluid">
+                                        <span class
+                                            style="font-size: 13px; font-weight: bold;">PPE</span>
+                                    </div>
+                                </nav>
+                                <div class="d-flex align-items-center gap-5">
+                                    <div>
+                                        <div>
+                                            <div
+                                                class=" d-flex align-items-center gap-2">
+                                                <div class>
+                                                    <h1
+                                                        style="font-size: 12px;">Employees</h1>
+                                                    <div>
+                                                        <input type="text"
+                                                            class="form-control">
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <h1
+                                                        style="font-size: 12px;">Roles</h1>
+                                                    <div
+                                                        class="w-35  d-flex align-items-center gap-4 justify-content-end  custom-select">
+
+                                                        <select name id
+                                                            class="form-control">
+                                                            <option
+                                                                value>Aspiration
+                                                                ducting</option>
+                                                            <option
+                                                                value>2</option>
+                                                            <option
+                                                                value>3</option>
+                                                        </select>
+                                                        <i
+                                                            class="bi bi-chevron-down"
+                                                            style="position: absolute; right: 33px;"></i>
+                                                    </div>
+                                                </div>
+                                                <div>
+                                                    <i
+                                                        class="bi bi-plus-circle-fill text-success"></i>
+                                                    <i
+                                                        class="bi bi-dash-circle-fill text-success"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div
+                                        class="d-flex align-items-center gap-5">
+                                        <div>
+                                            <h1
+                                                style="font-size: 12px;">Start
+                                                Date</h1>
+                                            <input type="date"
+                                                class="form-control">
+                                        </div>
+                                        <div>
+                                            <h1
+                                                style="font-size: 12px;">End
+                                                Date</h1>
+                                            <input type="date"
+                                                class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="tab-pane fade" id="manage-access"
+                        role="tabpanel" aria-labelledby="manage-access-tab">
+                        <!-- Manage Access content here -->
+                        <div class="pt-4"
+                            style="width: calc(100% - 20px); margin: 0 auto;">
+                            <nav class="navbar custom-nav-round-nav ">
+                                <div class="container-fluid">
+                                    <span class
+                                        style="font-size: 13px; font-weight: bold;">Manage
+                                        User Access
+                                    </span>
+                                </div>
+                            </nav>
+
+                            <div class="d-flex gap-3">
+                                <div>
+                                    <h1
+                                        style="font-size: 12px;">WO Number</h1>
+                                    <div
+                                        class="w-28 d-flex align-items-center gap-4 justify-content-end  custom-select">
+
+                                        <select name id
+                                            class="form-control">
+                                            <option
+                                                value></option>
+                                            <option
+                                                value>2</option>
+                                            <option
+                                                value>3</option>
+                                        </select>
+                                        <i
+                                            class="bi bi-chevron-down"
+                                            style="position: absolute; right: 20px;"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h1
+                                        style="font-size: 12px;">Department
+                                    </h1>
+                                    <div
+                                        class="w-28  d-flex align-items-center gap-4 justify-content-end  custom-select">
+
+                                        <select name id
+                                            class="form-control">
+                                            <option
+                                                value></option>
+                                            <option
+                                                value>2</option>
+                                            <option
+                                                value>3</option>
+                                        </select>
+                                        <i
+                                            class="bi bi-chevron-down"
+                                            style="position: absolute; right: 20px;"></i>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <h1
+                                        style="font-size: 12px;">Employee</h1>
+                                    <div
+                                        class="w-28  d-flex align-items-center gap-4 justify-content-end  custom-select">
+
+                                        <select name id
+                                            class="form-control">
+                                            <option
+                                                value></option>
+                                            <option
+                                                value>1</option>
+                                            <option
+                                                value>2</option>
+                                        </select>
+                                        <i
+                                            class="bi bi-chevron-down"
+                                            style="position: absolute; right: 20px;"></i>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="d-flex  gap-1 justify-content-end">
+                                <nav aria-label="Page navigation example">
+                                    <ul class="pagination custom-pagination">
+                                        <li class="page-item"><a
+                                                class="page-link  text-dark"
+                                                href="#">Previous</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link text-dark"
+                                                href="#">1</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link text-dark"
+                                                href="#">2</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link text-dark"
+                                                href="#">3</a></li>
+                                        <li class="page-item"><a
+                                                class="page-link text-dark"
+                                                href="#">Next</a></li>
+                                    </ul>
+                                </nav>
+                                <div class="form-control"
+                                    style="width: fit-content; height: fit-content ; cursor: pointer;">
+                                    <i class="bi bi-printer-fill"></i>
+                                </div>
+                            </div>
+
+                            <div>
+                                <table class="table  ">
+                                    <thead class="table-secondary">
+                                        <tr>
+                                            <th>Module name</th>
+                                            <th>Create</th>
+                                            <th>Read</th>
+                                            <th>Update</th>
+                                            <th>Delete</th>
+
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Module 1</td>
+                                            <td><input
+                                                    class="form-check-input mt-0 s"
+                                                    type="checkbox" value
+                                                    aria-label="Checkbox for following text input"></td>
+                                            <td><input
+                                                    class="form-check-input mt-0 s"
+                                                    type="checkbox" value
+                                                    aria-label="Checkbox for following text input"></td>
+                                            <td><input
+                                                    class="form-check-input mt-0 s"
+                                                    type="checkbox" value
+                                                    aria-label="Checkbox for following text input"></td>
+                                            <td><input
+                                                    class="form-check-input mt-0 s"
+                                                    type="checkbox" value
+                                                    aria-label="Checkbox for following text input"></td>
+
+                                        </tr>
+                                        <tr>
+                                            <td>Module 2</td>
+                                            <td><input
+                                                    class="form-check-input mt-0 s"
+                                                    type="checkbox" value
+                                                    aria-label="Checkbox for following text input"></td>
+                                            <td><input
+                                                    class="form-check-input mt-0 s"
+                                                    type="checkbox" value
+                                                    aria-label="Checkbox for following text input"></td>
+                                            <td><input
+                                                    class="form-check-input mt-0 s"
+                                                    type="checkbox" value
+                                                    aria-label="Checkbox for following text input"></td>
+                                            <td><input
+                                                    class="form-check-input mt-0 s"
+                                                    type="checkbox" value
+                                                    aria-label="Checkbox for following text input"></td>
+
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

@@ -1,0 +1,88 @@
+.custom-navbar-left {
+    width: calc(100% - 95%) !important;
+    height: 100vh;
+}
+
+.custom-navbar-right {
+    width: 100%;
+}
+
+.custom-p {
+    font-size: 7px;
+}
+
+.navbar-right-custom {
+    width: calc(100% - 40px);
+    margin: 0 auto;
+}
+
+.custom-li {
+    background-color: rgb(235, 235, 235) !important;
+    width: fit-content;
+    border-radius: 5px;
+}
+
+.custom-tab {
+    background-color: transparent;
+    border-radius: 0px !important;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 13px !important;
+    color: black !important;
+
+    &.active {
+        background-color: rgb(168, 168, 168) !important;
+    }
+}
+
+.custom-select {
+    position: relative;
+
+    select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+    }
+}
+
+.custom-nav-round-nav {
+    background-color: rgb(226, 226, 226);
+}
+
+.w-35 {
+    width: 22rem;
+}
+
+.w-28 {
+    width: 16rem;
+}
+
+.w-45 {
+    width: 28rem;
+}
+
+.w-5 {
+    width: 3rem;
+}
+
+.custom-nav-round {
+    width: calc(100% - 25px) !important;
+    margin: 0 auto;
+}
+
+.custom-pagination {
+    > ul li {
+        color: black !important;
+        text-decoration: none;
+    }
+}
+
+.form-check-input.s {
+    width: 1.25em;
+    height: 1.25em;
+
+    &:checked {
+        background-color: green;
+        border-color: green;
+    }
+}
